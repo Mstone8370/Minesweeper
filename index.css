@@ -1,0 +1,139 @@
+.wrapper {
+  margin: 100px auto;
+  text-align: center;
+}
+
+#loginWrapper {
+  border: 2px solid #333;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  border-radius: 16px;
+}
+
+#loginDiv {
+  margin-top: 20px;
+}
+
+.loginInput {
+  padding: 4px;
+  margin-bottom: 15px;
+}
+
+#userDiv {
+  margin-top: 25px;
+}
+
+#userDiv span {
+  margin-left: 5px;
+}
+
+.buttonDiv {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.button {
+  margin: 10px;
+  padding: 3px 18px;
+}
+
+#gameStart {
+  width: 220px;
+  margin-left: 4px;
+}
+
+h1 {
+  letter-spacing: 10px;
+}
+
+iframe {
+  border: 0px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w*/
+}
+
+/* Modal Content/Box */
+.modal-head {
+  padding-right: 15%;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 100px auto;
+  padding-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#rankModal .modal-content {
+  background-color: #fefefe;
+  margin: 100px auto;
+  padding-bottom: 20px;
+  width: 800px;
+  overflow: hidden;
+}
+
+#rankModal .modal-head {
+  padding-right: 3%;
+}
+
+#rankModal .modal-body {
+  margin-top: 54px;
+}
+
+#rankModal table {
+  text-align: center;
+  width: 245px;
+  float: left;
+  margin: 0 10px;
+}
+
+#rankModal td {
+  padding: 3px;
+  padding-top: 20px;
+}
+
+.rankTitle  {
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+#skinModal .modal-content {
+  width:  600px;
+}
+
+#skinModal .modal-head {
+  padding-right: 3%;
+}
+
+#gameBoardModal .modal-content {
+  margin: 50px auto;
+}
+
+.closeButton {
+  color: #aaa;
+  float: right;
+  right: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  width: 30px;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}

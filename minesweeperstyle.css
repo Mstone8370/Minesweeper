@@ -1,0 +1,147 @@
+* {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+table {
+  margin: 20px auto;
+  border-spacing: 0px;
+}
+
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  display: inline-block;
+  white-space: nowrap;
+  border: 1px solid black;
+  width: 32px;
+  height: 32px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+thead td {
+  width: 50px;
+  text-align: center;
+}
+
+#wrapper {
+  width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#optionButton {
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+#table {
+  border-collapse: collapse;
+}
+
+#resultDiv {
+  width: 200px;
+  height: 100px;
+}
+
+#playAgainButtonDiv {
+  margin: 10px;
+  margin-top: 30px;
+  text-align: right;
+}
+
+#playAgainButton {
+  padding: 1px;
+  width: 45px;
+  height: 45px;
+}
+
+.status {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.status div {
+  display: inline;
+  height: 20px;
+  margin: 0 30px;
+}
+
+.status img {
+  height: 19px;
+  width: 19px;
+}
+
+.status span {
+  margin-bottom: 10px;
+}
+
+.result {
+  text-align: center;
+  margin: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(243, 243, 243);
+  margin: 130px auto; /* 15% from the top and centered */
+  padding-bottom: 20px;
+  border: 4px solid #333;
+  border-radius: 20px;
+  width: 180px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closeButton {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  width: 30px;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-head {
+  margin-bottom: 50px;
+}
+
+.modal-body {
+  margin: 40px;
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+.modal-bottom {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

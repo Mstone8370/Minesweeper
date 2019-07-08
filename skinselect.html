@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="skinselect.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+      <div class="body">
+        <div id="default" class="skinList">    <!-- 스킨 목록 -->
+          <div class="red"> <img src="img/lock.png"> </div>
+          <input type="radio" id="defaultRadio" name="skin"> Default <br>
+          <table>
+            <tr>
+              <td> <img src="img/default/block.png"> </td>
+              <td> <img src="img/default/flag.png"> </td>
+              <td> <img src="img/default/mine.png"> </td>
+              <td> <img src="img/default/plain.png"> </td>
+              <td> <img src="img/default/1.png"> </td>
+              <td> <img src="img/default/2.png"> </td>
+              <td> <img src="img/default/3.png"> </td>
+              <td> <img src="img/default/4.png"> </td>
+              <td> <img src="img/default/5.png"> </td>
+              <td> <img src="img/default/6.png"> </td>
+              <td> <img src="img/default/7.png"> </td>
+              <td> <img src="img/default/8.png"> </td>
+            </tr>
+          </table>
+        </div>
+        <div id="handWrite" class="skinList">
+          <div class="red"> <img src="img/lock.png"> </div>
+          <input type="radio" id="handWriteRadio" name="skin"> Hand write <br>
+          <table>
+            <tr>
+              <td> <img src="img/handWrite/block.png"> </td>
+              <td> <img src="img/handWrite/flag.png"> </td>
+              <td> <img src="img/handWrite/mine.png"> </td>
+              <td> <img src="img/handWrite/plain.png"> </td>
+              <td> <img src="img/handWrite/1.png"> </td>
+              <td> <img src="img/handWrite/2.png"> </td>
+              <td> <img src="img/handWrite/3.png"> </td>
+              <td> <img src="img/handWrite/4.png"> </td>
+              <td> <img src="img/handWrite/5.png"> </td>
+              <td> <img src="img/handWrite/6.png"> </td>
+              <td> <img src="img/handWrite/7.png"> </td>
+              <td> <img src="img/handWrite/8.png"> </td>
+            </tr>
+          </table>
+        </div>
+        <div id="flower" class="skinList">
+          <div class="red"> <img src="img/lock.png"> </div>
+          <input type="radio" id="flowerRadio" name="skin"> Flower <br>
+          <table>
+            <tr>
+              <td> <img src="img/flower/block.png"> </td>
+              <td> <img src="img/flower/flag.png"> </td>
+              <td> <img src="img/flower/mine.png"> </td>
+              <td> <img src="img/flower/plain.png"> </td>
+              <td> <img src="img/flower/1.png"> </td>
+              <td> <img src="img/flower/2.png"> </td>
+              <td> <img src="img/flower/3.png"> </td>
+              <td> <img src="img/flower/4.png"> </td>
+              <td> <img src="img/flower/5.png"> </td>
+              <td> <img src="img/flower/6.png"> </td>
+              <td> <img src="img/flower/7.png"> </td>
+              <td> <img src="img/flower/8.png"> </td>
+            </tr>
+          </table>
+        </div>
+        <div id="radioactive" class="skinList">
+          <div class="red"> <img src="img/lock.png"> </div>
+          <input type="radio" id="radioactiveRadio" name="skin"> Radioactive <br>
+          <table>
+            <tr>
+              <td> <img src="img/radioactive/block.png"> </td>
+              <td> <img src="img/radioactive/flag.png"> </td>
+              <td> <img src="img/radioactive/mine.png"> </td>
+              <td> <img src="img/radioactive/plain.png"> </td>
+              <td> <img src="img/radioactive/1.png"> </td>
+              <td> <img src="img/radioactive/2.png"> </td>
+              <td> <img src="img/radioactive/3.png"> </td>
+              <td> <img src="img/radioactive/4.png"> </td>
+              <td> <img src="img/radioactive/5.png"> </td>
+              <td> <img src="img/radioactive/6.png"> </td>
+              <td> <img src="img/radioactive/7.png"> </td>
+              <td> <img src="img/radioactive/8.png"> </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="footer">
+        <button type="button" id="skinSave">저장</button>
+      </div>
+
+    </div>
+
+    <!-- Modal https://www.w3schools.com/howto/howto_css_modals.asp -->
+    <div id="buyModal" class="modal">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <span> 가격: 50 크레딧 </span><br> <br>
+          <button type="button" id="buy">구매</button>
+          <button type="button" id="cancel">취소</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal https://www.w3schools.com/howto/howto_css_modals.asp -->
+    <div id="saveModal" class="modal">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-head">
+          <span id="closeButton">&times;</span>
+        </div>
+        <div id="saveResult" class="modal-body">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="skinselect.js"></script>
+
+  </body>
+</html>

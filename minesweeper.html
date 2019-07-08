@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="minesweeperstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div id="wrapper">
+
+      <button type="button" id="optionButton">옵션</button><br>
+
+      <div class="status">
+        <!-- 남은 지뢰 개수와 타이머가 표시되는 부분 -->
+        <div class="mine">
+          <img src="img/mine.png"> <span id="remainMines"></span>
+        </div>
+        <div class="time">
+          <img src="img/time.png"> <span id="timer"></span>
+        </div>
+      </div>
+
+      <table id="table">
+        <thead>
+
+        </thead>
+        <tbody id="board"> <!-- 게임 판 -->
+
+        </tbody>
+      </table>
+
+      <div id="playAgainButtonDiv">
+        <button type="button" id="playAgainButton"><img src="img/playAgain.png"></button>
+      </div>
+
+    </div>
+
+    <!-- Modal https://www.w3schools.com/howto/howto_css_modals.asp -->
+    <div id="optionModal" class="modal">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-head">
+          <span class="closeButton">&times;</span>
+        </div>
+        <div class="modal-body">
+          <input type="radio" id="easy" name="mode" value="easy" checked> Easy<br>
+          <input type="radio" id="medium" name="mode" value="medium"> Medium<br>
+          <input type="radio" id="hard" name="mode" value="hard"> Hard<br>
+        </div>
+        <div class="modal-bottom">
+          <button type="button" id="applyButton">적용</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal https://www.w3schools.com/howto/howto_css_modals.asp -->
+    <div id="resultModal" class="modal">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-head">
+          <span class="closeButton">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div id="resultText" class="result"></div>
+          <div id="resultTime" class="result"></div>
+        </div>
+        <div class="modal-bottom">
+          <button type="button" id="submitButton">등록</button>
+          <span id="success">등록 완료</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="minesweeperscript.js"></script>
+
+  </body>
+</html>
